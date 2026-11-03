@@ -42,6 +42,7 @@ body {
   align-items: center;
   justify-content: center;
   padding: 0 16px;
+  /* nudge up slightly so it sits above true center, like Google */
   margin-top: -6vh;
 }
 
@@ -49,6 +50,7 @@ body {
   width: min(300px, 70vw);
   height: auto;
   margin-bottom: 28px;
+  /* non-interactive */
   pointer-events: none;
   user-select: none;
   -webkit-user-drag: none;
@@ -121,4 +123,120 @@ body {
 .top-link:focus-visible {
   outline: 2px solid #1a73e8;
   outline-offset: 2px;
+}
+
+/*  EXTRAS FOR CRUZE ABOUT PAGE */
+
+.page-about {
+  height: auto;
+  min-height: 100vh;
+}
+
+.about {
+  flex: 1;
+  width: 100%;
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 24px 24px 64px;
+}
+
+/* Image placeholders */
+.about-image {
+  background-color: #e8eaed;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+}
+
+.about-hero {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 12px;
+  height: 320px;
+}
+
+.about-mission {
+  margin-top: 56px;
+}
+
+.about-mission h1 {
+  max-width: 820px;
+  margin: 0 0 20px;
+  font-size: clamp(28px, 4vw, 44px);
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+.about-mission p {
+  max-width: 820px;
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #5f6368;
+}
+
+.about-why {
+  margin-top: 80px;
+}
+
+.about-why h2 {
+  margin: 0 0 20px;
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.about-why p {
+  max-width: 720px;
+  margin: 0 0 16px;
+  font-size: 17px;
+  line-height: 1.6;
+  color: #3c4043;
+}
+
+.about-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 32px;
+}
+
+.about-gallery .about-image {
+  height: 200px;
+}
+
+.about-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  border-top: 1px solid #dadce0;
+}
+
+.about-footer-left {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.footer-logo {
+  display: block;
+  width: 80px;
+  height: auto;
+}
+
+@media (max-width: 700px) {
+  .about-hero,
+  .about-gallery {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+
+  .about-hero .about-image {
+    height: 180px;
+  }
+
+  .about-footer {
+    flex-direction: column;
+    gap: 16px;
+  }
 }
