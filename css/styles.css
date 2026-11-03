@@ -34,7 +34,6 @@ body {
   text-decoration: underline;
 }
 
-/* Center: logotype + search bar */
 .center {
   flex: 1;
   display: flex;
@@ -123,7 +122,7 @@ body {
   outline-offset: 2px;
 }
 
-/*  EXTRAS FOR CRUZE ABOUT PAGE */
+/* EXTRAS FOR CRUZE ABOUT PAGE */
 
 .page-about {
   height: auto;
@@ -138,7 +137,8 @@ body {
   padding: 24px 24px 64px;
 }
 
-/* Image placeholders */
+/* Image placeholders: swap in real images with
+   style="background-image: url('../media/your-file.jpg')" */
 .about-image {
   background-color: #e8eaed;
   background-size: cover;
@@ -236,5 +236,66 @@ body {
   .about-footer {
     flex-direction: column;
     gap: 16px;
+  }
+}
+
+/*  EXTRAS: SUBTLE GLITCH EFFECT */
+
+/* Mostly still: the glitch is a ~0.3s burst near the end of each loop */
+@keyframes glitch-text {
+  0%, 91%, 100% { transform: none; text-shadow: none; opacity: 1; }
+  92% { transform: translate(-1px, 0); text-shadow: 1px 0 rgba(255, 0, 60, 0.6), -1px 0 rgba(0, 200, 255, 0.6); }
+  93% { transform: translate(1px, 0); text-shadow: -1px 0 rgba(255, 0, 60, 0.6), 1px 0 rgba(0, 200, 255, 0.6); opacity: 0.85; }
+  94% { transform: none; text-shadow: none; opacity: 1; }
+  96% { transform: translate(0, 1px); text-shadow: 1px 0 rgba(255, 0, 60, 0.6), -1px 0 rgba(0, 200, 255, 0.6); opacity: 0.9; }
+  97% { transform: none; text-shadow: none; opacity: 1; }
+}
+
+@keyframes glitch-image {
+  0%, 91%, 100% { transform: none; filter: none; opacity: 1; }
+  92% { transform: translate(-2px, 0); filter: drop-shadow(2px 0 rgba(255, 0, 60, 0.5)) drop-shadow(-2px 0 rgba(0, 200, 255, 0.5)); opacity: 0.85; }
+  93% { transform: translate(2px, 0); filter: drop-shadow(-2px 0 rgba(255, 0, 60, 0.5)) drop-shadow(2px 0 rgba(0, 200, 255, 0.5)); opacity: 0.9; }
+  94% { transform: none; filter: none; opacity: 1; }
+}
+
+/* Buttons: short glitch each time you hover */
+@keyframes glitch-hover {
+  0%   { transform: none; text-shadow: none; }
+  25%  { transform: translate(-2px, 0); text-shadow: 1px 0 rgba(255, 0, 60, 0.6), -1px 0 rgba(0, 200, 255, 0.6); }
+  50%  { transform: translate(2px, 0); text-shadow: -1px 0 rgba(255, 0, 60, 0.6), 1px 0 rgba(0, 200, 255, 0.6); }
+  75%  { transform: translate(0, 1px); text-shadow: none; }
+  100% { transform: none; text-shadow: none; }
+}
+
+/* Buttons: idle glitch, plus a faster one on hover (hover wins) */
+.btn { animation: glitch-text 8s infinite; }
+.btn:nth-child(2) { animation-delay: -2.5s; }
+.btn:nth-child(3) { animation-delay: -5s; }
+.btn:hover { animation: glitch-hover 0.25s 1; }
+
+/* Text: different durations so nothing flickers in sync */
+.top-link { animation: glitch-text 7s infinite; }
+.top-link:nth-child(2) { animation-delay: -3s; }
+.tagline { animation: glitch-text 9s infinite; animation-delay: -4s; }
+.about-mission h1 { animation: glitch-text 11s infinite; }
+
+/* Images */
+.logotype { animation: glitch-image 8s infinite; }
+.footer-logo { animation: glitch-image 10s infinite; }
+.about-image { animation: glitch-image 12s infinite; }
+.about-image:nth-child(2) { animation-delay: -4s; }
+.about-image:nth-child(3) { animation-delay: -8s; }
+
+/* Respect people who turn animations off */
+@media (prefers-reduced-motion: reduce) {
+  .btn,
+  .btn:hover,
+  .top-link,
+  .tagline,
+  .about-mission h1,
+  .logotype,
+  .footer-logo,
+  .about-image {
+    animation: none;
   }
 }
