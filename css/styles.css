@@ -42,7 +42,6 @@ body {
   align-items: center;
   justify-content: center;
   padding: 0 16px;
-  /* nudge up slightly so it sits above true center, like Google */
   margin-top: -6vh;
 }
 
@@ -50,7 +49,6 @@ body {
   width: min(300px, 70vw);
   height: auto;
   margin-bottom: 28px;
-  /* non-interactive */
   pointer-events: none;
   user-select: none;
   -webkit-user-drag: none;
