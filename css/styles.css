@@ -41,9 +41,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0 16px;
-  /* nudge up slightly so it sits above true center, like Google */
-  margin-top: -6vh;
+  padding: 0 16px 12vh;
 }
 
 .logotype {
