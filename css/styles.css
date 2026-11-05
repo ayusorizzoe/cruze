@@ -244,25 +244,25 @@ body {
 /* Mostly still: the glitch is a ~0.3s burst near the end of each loop */
 @keyframes glitch-text {
   0%, 91%, 100% { transform: none; text-shadow: none; opacity: 1; }
-  92% { transform: translate(-1px, 0); text-shadow: 1px 0 rgba(255, 0, 60, 0.6), -1px 0 rgba(0, 200, 255, 0.6); }
-  93% { transform: translate(1px, 0); text-shadow: -1px 0 rgba(255, 0, 60, 0.6), 1px 0 rgba(0, 200, 255, 0.6); opacity: 0.85; }
+  92% { transform: translate(-1px, 0); text-shadow: 1.5px 0 rgba(245, 169, 184, 0.9), -1.5px 0 rgba(91, 206, 250, 0.9); }
+  93% { transform: translate(1px, 0); text-shadow: -1.5px 0 rgba(245, 169, 184, 0.9), 1.5px 0 rgba(91, 206, 250, 0.9); opacity: 0.85; }
   94% { transform: none; text-shadow: none; opacity: 1; }
-  96% { transform: translate(0, 1px); text-shadow: 1px 0 rgba(255, 0, 60, 0.6), -1px 0 rgba(0, 200, 255, 0.6); opacity: 0.9; }
+  96% { transform: translate(0, 1px); text-shadow: 1.5px 0 rgba(245, 169, 184, 0.9), -1.5px 0 rgba(91, 206, 250, 0.9); opacity: 0.9; }
   97% { transform: none; text-shadow: none; opacity: 1; }
 }
 
 @keyframes glitch-image {
   0%, 91%, 100% { transform: none; filter: none; opacity: 1; }
-  92% { transform: translate(-2px, 0); filter: drop-shadow(2px 0 rgba(255, 0, 60, 0.5)) drop-shadow(-2px 0 rgba(0, 200, 255, 0.5)); opacity: 0.85; }
-  93% { transform: translate(2px, 0); filter: drop-shadow(-2px 0 rgba(255, 0, 60, 0.5)) drop-shadow(2px 0 rgba(0, 200, 255, 0.5)); opacity: 0.9; }
+  92% { transform: translate(-2px, 0); filter: drop-shadow(2px 0 rgba(245, 169, 184, 0.85)) drop-shadow(-2px 0 rgba(91, 206, 250, 0.85)); opacity: 0.85; }
+  93% { transform: translate(2px, 0); filter: drop-shadow(-2px 0 rgba(245, 169, 184, 0.85)) drop-shadow(2px 0 rgba(91, 206, 250, 0.85)); opacity: 0.9; }
   94% { transform: none; filter: none; opacity: 1; }
 }
 
 /* Buttons: short glitch each time you hover */
 @keyframes glitch-hover {
   0%   { transform: none; text-shadow: none; }
-  25%  { transform: translate(-2px, 0); text-shadow: 1px 0 rgba(255, 0, 60, 0.6), -1px 0 rgba(0, 200, 255, 0.6); }
-  50%  { transform: translate(2px, 0); text-shadow: -1px 0 rgba(255, 0, 60, 0.6), 1px 0 rgba(0, 200, 255, 0.6); }
+  25%  { transform: translate(-2px, 0); text-shadow: 1.5px 0 rgba(245, 169, 184, 0.9), -1.5px 0 rgba(91, 206, 250, 0.9); }
+  50%  { transform: translate(2px, 0); text-shadow: -1.5px 0 rgba(245, 169, 184, 0.9), 1.5px 0 rgba(91, 206, 250, 0.9); }
   75%  { transform: translate(0, 1px); text-shadow: none; }
   100% { transform: none; text-shadow: none; }
 }
