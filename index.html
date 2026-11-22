@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="cruze">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,45 +9,38 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
 
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/cruze.css">
 </head>
+
 <body>
 
   <header class="top-bar">
-    <a href="pages/about.html" class="top-link">About</a>
-    <a href="pages/images.html" class="top-link">Images</a>
+    <a href="pages/main/about.html" class="top-link">About</a>
+    <a href="pages/main/help.html" class="top-link">Help</a>
   </header>
 
   <main class="center">
-    <img
-      src="media/cruze_Logotype.png"
-      alt="Cruze"
-      class="logotype"
-      draggable="false">
+    <h1 class="logo-heading"><img src="media/cruze_Logotype.png" alt="Cruze" class="logotype cruze-logo" draggable="false"></h1>
 
     <form id="search-form" class="search-form" role="search" autocomplete="off">
-      <input
-        id="search-input"
-        class="search-input"
-        type="search"
-        name="q"
-        placeholder="Search"
-        aria-label="Search"
+      <input id="search-input" class="search-input" type="search" name="q" placeholder="Search" aria-label="Search"
         autofocus>
     </form>
   </main>
 
   <footer class="bottom">
-    <p class="tagline">Search. Discover. Unlearn and re-learn.</p>
     <nav class="footer-buttons">
-      <a href="pages/how-search-works.html" class="btn">How Search Works</a>
-      <a href="pages/privacy.html" class="btn">Privacy</a>
-      <a href="pages/advertising.html" class="btn">Advertising</a>
+      <a href="pages/main/how-search-works.html" class="btn">How Search Works</a>
+      <a href="pages/main/privacy.html" class="btn">Privacy</a>
+      <a href="pages/main/advertising.html" class="btn">Advertising</a>
     </nav>
   </footer>
 
-  <script src="scripts/main.js"></script>
+  <script src="scripts/cruze.js"></script>
 </body>
+
 </html>

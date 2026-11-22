@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The room | Salome</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/salome.css">
+  <link rel="stylesheet" href="../../css/cruze.css">
+</head>
+<body class="sl-site rm">
+
+  <a class="sl-skip" href="#rm-main">Skip to main content</a>
+
+  <nav class="sl-bar" aria-label="Salome">
+    <div class="sl-bar__nav">
+      <a class="sl-bar__home" href="salome.html">SALOME</a>
+      <ul class="sl-bar__list">
+        <li><a href="salomeRoom.html#rm-home" aria-current="page">the room</a></li>
+        <li><a href="salomeProjects.html">projects</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="rm-printbar" id="rm-printbar" hidden>
+    <a class="rm-printbar__back" href="salomeRoom.html"><span aria-hidden="true">←</span> back to the room</a>
+    <button class="rm-printbar__print" type="button">print or save as pdf</button>
+  </div>
+
+  <main id="rm-main" class="rm-main">
+
+    <div class="rm-ws">
+
+    <div class="rm-side" id="rm-home">
+      <div class="rm-head" id="rm-head">
+        <h1 class="rm-title"><a class="rm-title__link" href="#rm-home">THE ROOM</a></h1>
+        <p class="rm-sub">Salome’s shared workspace.</p>
+      </div>
+      <button class="rm-switch" type="button" aria-expanded="false" aria-controls="rm-nav" hidden><span class="rm-switch__cat"></span> <span class="rm-switch__title"></span></button>
+      <nav class="rm-nav" id="rm-nav" aria-label="The room">
+        <section class="rm-nav__group rm-nav__group--threads" data-category="conversations" aria-labelledby="rm-nav-conversations">
+          <div class="rm-nav__top">
+            <h2 class="rm-nav__label" id="rm-nav-conversations">conversations</h2>
+            <button class="rm-action rm-new" type="button" data-dialog="new" hidden>+ new conversation</button>
+          </div>
+          <p class="rm-nav__intro">members and guest members use this space to talk and coordinate their work.</p>
+          <ul class="rm-nav__list">
+            <li><a class="rm-nav__link" href="#workshop-on-sunday"><span class="rm-nav__title"><span class="rm-subject">workshop on sunday</span></span> <span class="rm-nav__meta">started by Inez · nov 16</span> <span class="rm-nav__meta">last reply <time datetime="2026-11-16">nov 16</time> · 19 messages</span></a></li>
+            <li><a class="rm-nav__link" href="#conversation-1114"><span class="rm-nav__title"><span class="rm-subject"></span></span> <span class="rm-nav__meta">started by Ulises · nov 14</span> <span class="rm-nav__meta">last reply <time datetime="2026-11-14">nov 14</time> · 7 messages</span></a></li>
+            <li><a class="rm-nav__link" href="#saturday"><span class="rm-nav__title"><span class="rm-subject">Closing on Saturday</span></span> <span class="rm-nav__meta">started by Rob · nov 12</span> <span class="rm-nav__meta">last reply <time datetime="2026-11-12">nov 12</time> · 19 messages</span></a></li>
+            <li><a class="rm-nav__link" href="#the-upstairs-window"><span class="rm-nav__title"><span class="rm-subject">Upstairs window</span></span> <span class="rm-nav__meta">started by Rob · nov 11</span> <span class="rm-nav__meta">last reply <time datetime="2026-11-11">nov 11</time> · 20 messages</span></a></li>
+            <li><a class="rm-nav__link" href="#equipment"><span class="rm-nav__title"><span class="rm-subject">small projector</span></span> <span class="rm-nav__meta">started by Tonya · nov 10</span> <span class="rm-nav__meta">last reply <time datetime="2026-11-11">nov 11</time> · 28 messages</span></a></li>
+            <li><a class="rm-nav__link" href="#the-exhibition"><span class="rm-nav__title"><span class="rm-subject">Opening on the 18th</span></span> <span class="rm-nav__meta">started by Grace · nov 9</span> <span class="rm-nav__meta">last reply <time datetime="2026-11-10">nov 10</time> · 29 messages</span></a></li>
+          </ul>
+          <div class="rm-nav__archive">
+            <p class="rm-nav__archive-title">older conversations</p>
+            <p>previous conversations have been moved to the archive.</p>
+          </div>
+        </section>
+        <div class="rm-nav__aside">
+        <section class="rm-nav__group" data-category="documents" aria-labelledby="rm-nav-documents">
+          <h2 class="rm-nav__label" id="rm-nav-documents">shared documents</h2>
+          <p class="rm-nav__intro">calendars, building information, and other things we need to keep in one place.</p>
+          <ul class="rm-nav__list">
+            <li><a class="rm-nav__link" href="#shared-calendar">shared calendar</a></li>
+            <li><a class="rm-nav__link" href="#building-notes">building notes</a></li>
+            <li><a class="rm-nav__link" href="#access-to-the-space">access to the space</a></li>
+          </ul>
+        </section>
+        <section class="rm-nav__group" data-category="notices" aria-labelledby="rm-nav-notices">
+          <h2 class="rm-nav__label" id="rm-nav-notices">notices</h2>
+          <p class="rm-nav__intro">upcoming events, invitations, and things happening at Salome.</p>
+          <ul class="rm-nav__list">
+            <li><a class="rm-nav__link" href="#upcoming-events">upcoming events</a></li>
+          </ul>
+        </section>
+        </div>
+      </nav>
+    </div>
+
+    <div class="rm-view" id="rm-view">
+    <div class="rm-entries">
+      <article class="rm-entry" id="the-upstairs-window" data-category="conversations" aria-labelledby="the-upstairs-window-title">
+        <div class="rm-entry__main">
+          <header class="rm-entry__head">
+            <p class="rm-entry__cat">conversations</p>
+            <h2 class="rm-entry__title" id="the-upstairs-window-title" tabindex="-1">Upstairs window</h2>
+            <p class="rm-entry__meta">started by Rob · <time datetime="2026-11-11">nov 11</time></p>
+          </header>
+          <div class="rm-thread">
+            <ol class="rm-msgs">
+              <li class="rm-day"><time datetime="2026-11-11">Wednesday, November 11</time></li>
+              <li class="rm-msg" id="the-upstairs-window-m1" data-sent="2026-11-11T08:07" tabindex="-1"><p class="rm-msg__from">Rob <time class="rm-msg__time" datetime="2026-11-11T08:07">8:07 am</time></p><p class="rm-msg__text">Did someone leave the upstairs window open last night?</p></li>
+              <li class="rm-msg" id="the-upstairs-window-m2" data-sent="2026-11-11T08:40" tabindex="-1"><p class="rm-msg__from">Grace <time class="rm-msg__time" datetime="2026-11-11T08:40">8:40 am</time></p><p class="rm-msg__text">Which one?</p></li>
+              <li class="rm-msg" id="the-upstairs-window-m3" data-sent="2026-11-11T08:41" tabindex="-1"><p class="rm-msg__from">Rob</p><p class="rm-msg__text">The one above the stairs. There’s water on the floor again.</p></li>
+              <li class="rm-msg" id="the-upstairs-window-m4" data-sent="2026-11-11T08:41" tabindex="-1"><p class="rm-msg__from">Grace</p><p class="rm-msg__text">Oh</p></li>
+              <li class="rm-msg" id="the-upstairs-window-m5" data-sent="2026-11-11T08:43" tabindex="-1"><p class="rm-msg__from">Rob</p><p class="rm-msg__text">I have to go. I don’t have time to clean up, can someone do that please? Also, please, this cannot happen again you guys.</p></li>
+              <li class="rm-msg" id="the-upstairs-window-m6" data-sent="2026-11-11T08:55" tabindex="-1"><p class="rm-msg__from">Grace</p><p class="rm-msg__text">I opened it yesterday afternoon.</p></li>
+              <li class="rm-msg rm-msg--cont" id="the-upstairs-window-m7" data-sent="2026-11-11T08:55" tabindex="-1"><p class="rm-msg__from rm-vh">Grace</p><p class="rm-msg__text">It just smelled like something had died up there…</p></li>
+              <li class="rm-msg" id="the-upstairs-window-m8" data-sent="2026-11-11T09:30" tabindex="-1"><p class="rm-msg__from">Milo <time class="rm-msg__time" datetime="2026-11-11T09:30">9:30 am</time></p><p class="rm-msg__text">oh, sorry about it, it was probably my glue</p></li>
+              <li class="rm-msg" id="the-upstairs-window-m9" data-sent="2026-11-11T09:31" tabindex="-1"><p class="rm-msg__from">Grace</p><p class="rm-msg__text">What glue? Why does it smell like death 😭</p></li>
+              <li class="rm-msg" id="the-upstairs-window-m10" data-sent="2026-11-11T09:40" tabindex="-1"><p class="rm-msg__from">Milo</p><p class="rm-msg__text">hm no it doesn’t but ok</p></li>
+              <li class="rm-msg" id="the-upstairs-window-m11" data-sent="2026-11-11T09:41" tabindex="-1"><p class="rm-msg__from">Sophie</p><p class="rm-msg__text">it absolutely does</p></li>
+              <li class="rm-msg" id="the-upstairs-window-m12" data-sent="2026-11-11T09:41" tabindex="-1"><p class="rm-msg__from">Milo</p><p class="rm-msg__text">okkkkk my bad y’all</p></li>
+              <li class="rm-msg" id="the-upstairs-window-m13" data-sent="2026-11-11T11:20" tabindex="-1"><p class="rm-msg__from">Rob <time class="rm-msg__time" datetime="2026-11-11T11:20">11:20 am</time></p><p class="rm-msg__text">Can someone tell me when it’s all cleaned up? I don’t want the floor to warp again.</p></li>
+              <li class="rm-msg" id="the-upstairs-window-m14" data-sent="2026-11-11T11:22" tabindex="-1"><p class="rm-msg__from">Grace</p><p class="rm-msg__text">I’m not there</p></li>
+              <li class="rm-msg" id="the-upstairs-window-m15" data-sent="2026-11-11T12:48" tabindex="-1"><p class="rm-msg__from">Sophie <time class="rm-msg__time" datetime="2026-11-11T12:48">12:48 pm</time></p><p class="rm-msg__text">i just cleaned up, left a towel there for now</p></li>
+              <li class="rm-msg" id="the-upstairs-window-m16" data-sent="2026-11-11T12:50" tabindex="-1"><p class="rm-msg__from">Rob</p><p class="rm-msg__text">Thank you.</p></li>
+              <li class="rm-msg" id="the-upstairs-window-m17" data-sent="2026-11-11T15:10" tabindex="-1"><p class="rm-msg__from">Milo <time class="rm-msg__time" datetime="2026-11-11T15:10">3:10 pm</time></p><p class="rm-msg__text">i can bring a different glue</p></li>
+              <li class="rm-msg" id="the-upstairs-window-m18" data-sent="2026-11-11T15:12" tabindex="-1"><p class="rm-msg__from">Sophie</p><p class="rm-msg__text">pleaseeee</p></li>
+              <li class="rm-msg" id="the-upstairs-window-m19" data-sent="2026-11-11T15:25" tabindex="-1"><p class="rm-msg__from">Grace</p><p class="rm-msg__text">Please bring one that smells like something living</p></li>
+              <li class="rm-msg" id="the-upstairs-window-m20" data-sent="2026-11-11T15:26" tabindex="-1"><p class="rm-msg__from">Milo</p><p class="rm-msg__text">can do</p></li>
+            </ol>
+            <div class="rm-thread__actions"><button class="rm-action" type="button" data-dialog="reply" hidden>reply</button></div>
+          </div>
+        </div>
+      </article>
+      <article class="rm-entry" id="saturday" data-category="conversations" aria-labelledby="saturday-title">
+        <div class="rm-entry__main">
+          <header class="rm-entry__head">
+            <p class="rm-entry__cat">conversations</p>
+            <h2 class="rm-entry__title" id="saturday-title" tabindex="-1">Closing on Saturday</h2>
+            <p class="rm-entry__meta">started by Rob · <time datetime="2026-11-12">nov 12</time></p>
+          </header>
+          <div class="rm-thread">
+            <ol class="rm-msgs">
+              <li class="rm-day"><time datetime="2026-11-12">Thursday, November 12</time></li>
+              <li class="rm-msg" id="saturday-m1" data-sent="2026-11-12T20:15" tabindex="-1"><p class="rm-msg__from">Rob <time class="rm-msg__time" datetime="2026-11-12T20:15">8:15 pm</time></p><p class="rm-msg__text">Can someone close on Saturday? I need to leave right after the screening.</p></li>
+              <li class="rm-msg" id="saturday-m2" data-sent="2026-11-12T21:02" tabindex="-1"><p class="rm-msg__from">Tonya <time class="rm-msg__time" datetime="2026-11-12T21:02">9:02 pm</time></p><p class="rm-msg__text">i can!</p></li>
+              <li class="rm-msg" id="saturday-m3" data-sent="2026-11-12T21:03" tabindex="-1"><p class="rm-msg__from">Rob</p><p class="rm-msg__text">Thank you!</p></li>
+              <li class="rm-msg" id="saturday-m4" data-sent="2026-11-12T21:03" tabindex="-1"><p class="rm-msg__from">Tonya</p><p class="rm-msg__text">are you and Nina home Sunday? i was thinking i could come over.</p></li>
+              <li class="rm-msg" id="saturday-m5" data-sent="2026-11-12T21:20" tabindex="-1"><p class="rm-msg__from">Rob <time class="rm-msg__time" datetime="2026-11-12T21:20">9:20 pm</time></p><p class="rm-msg__text">Yeah, we’ll be home. We’re trying to get the spare room ready for the baby.</p></li>
+              <li class="rm-msg" id="saturday-m6" data-sent="2026-11-12T21:21" tabindex="-1"><p class="rm-msg__from">Tonya</p><p class="rm-msg__text">i can help with that!</p></li>
+              <li class="rm-msg" id="saturday-m7" data-sent="2026-11-12T21:25" tabindex="-1"><p class="rm-msg__from">Rob</p><p class="rm-msg__text">You don’t have to… just come for lunch. Nina will be happy to see you.</p></li>
+              <li class="rm-msg" id="saturday-m8" data-sent="2026-11-12T21:26" tabindex="-1"><p class="rm-msg__from">Tonya</p><p class="rm-msg__text">i can do both. how’s Nina?</p></li>
+              <li class="rm-msg" id="saturday-m9" data-sent="2026-11-12T21:40" tabindex="-1"><p class="rm-msg__from">Rob</p><p class="rm-msg__text">Good, just tired. She’s been sorting through boxes all week.</p></li>
+              <li class="rm-msg" id="saturday-m10" data-sent="2026-11-12T21:41" tabindex="-1"><p class="rm-msg__from">Tonya</p><p class="rm-msg__text">tell her i’ll bring lunch, i haven’t seen her in foreverrr</p></li>
+              <li class="rm-msg" id="saturday-m11" data-sent="2026-11-12T21:44" tabindex="-1"><p class="rm-msg__from">Rob</p><p class="rm-msg__text">Yeah, she would love that! She found the wedding album. Your speech is still the funniest thing she’s ever heard haha.</p></li>
+              <li class="rm-msg" id="saturday-m12" data-sent="2026-11-12T21:46" tabindex="-1"><p class="rm-msg__from">Tonya</p><p class="rm-msg__text">oh god. i’d forgotten about that</p></li>
+              <li class="rm-msg" id="saturday-m13" data-sent="2026-11-12T21:47" tabindex="-1"><p class="rm-msg__from">Rob</p><p class="rm-msg__text">Well, she hasn’t. She’s been laughing about it on and off these past few days.</p></li>
+              <li class="rm-msg" id="saturday-m14" data-sent="2026-11-12T22:32" tabindex="-1"><p class="rm-msg__from">Ulises <time class="rm-msg__time" datetime="2026-11-12T22:32">10:32 pm</time></p><p class="rm-msg__text">can i come?</p></li>
+              <li class="rm-msg" id="saturday-m15" data-sent="2026-11-12T22:33" tabindex="-1"><p class="rm-msg__from">Tonya</p><p class="rm-msg__text">Ulises 😭</p></li>
+              <li class="rm-msg" id="saturday-m16" data-sent="2026-11-12T22:33" tabindex="-1"><p class="rm-msg__from">Ulises</p><p class="rm-msg__text">WHAT</p></li>
+              <li class="rm-msg" id="saturday-m17" data-sent="2026-11-12T22:51" tabindex="-1"><p class="rm-msg__from">Rob <time class="rm-msg__time" datetime="2026-11-12T22:51">10:51 pm</time></p><a class="rm-quote" href="#saturday-m14"><span class="rm-vh">in reply to </span><span class="rm-quote__from">Ulises</span> <span class="rm-quote__text">can i come?</span></a><p class="rm-msg__text">Sure. We’re moving furniture around, so you can help with that. You have to help though.</p></li>
+              <li class="rm-msg" id="saturday-m18" data-sent="2026-11-12T22:52" tabindex="-1"><p class="rm-msg__from">Ulises</p><p class="rm-msg__text">yeah, i will help</p></li>
+              <li class="rm-msg" id="saturday-m19" data-sent="2026-11-12T22:58" tabindex="-1"><p class="rm-msg__from">Tonya</p><p class="rm-msg__text">alright, i will bring lunch for four then</p></li>
+            </ol>
+            <div class="rm-thread__actions"><button class="rm-action" type="button" data-dialog="reply" hidden>reply</button></div>
+          </div>
+        </div>
+      </article>
+      <article class="rm-entry" id="equipment" data-category="conversations" aria-labelledby="equipment-title">
+        <div class="rm-entry__main">
+          <header class="rm-entry__head">
+            <p class="rm-entry__cat">conversations</p>
+            <h2 class="rm-entry__title" id="equipment-title" tabindex="-1">small projector</h2>
+            <p class="rm-entry__meta">started by Tonya · <time datetime="2026-11-10">nov 10</time></p>
+          </header>
+          <div class="rm-thread">
+            <ol class="rm-msgs">
+              <li class="rm-day"><time datetime="2026-11-10">Tuesday, November 10</time></li>
+              <li class="rm-msg" id="equipment-m1" data-sent="2026-11-10T09:40" tabindex="-1"><p class="rm-msg__from">Tonya <time class="rm-msg__time" datetime="2026-11-10T09:40">9:40 am</time></p><p class="rm-msg__text">does anyone know where the small projector is?</p></li>
+              <li class="rm-msg" id="equipment-m2" data-sent="2026-11-10T10:15" tabindex="-1"><p class="rm-msg__from">Sophie <time class="rm-msg__time" datetime="2026-11-10T10:15">10:15 am</time></p><p class="rm-msg__text">um, i lent it to a friend :/</p></li>
+              <li class="rm-msg rm-msg--cont" id="equipment-m3" data-sent="2026-11-10T10:15" tabindex="-1"><p class="rm-msg__from rm-vh">Sophie</p><p class="rm-msg__text">but she’s bringing it back Thursday</p></li>
+              <li class="rm-msg" id="equipment-m4" data-sent="2026-11-10T10:16" tabindex="-1"><p class="rm-msg__from">Tonya</p><p class="rm-msg__text">did you ask anyone?</p></li>
+              <li class="rm-msg" id="equipment-m5" data-sent="2026-11-10T10:20" tabindex="-1"><p class="rm-msg__from">Sophie</p><p class="rm-msg__text">no, sorry</p></li>
+              <li class="rm-msg rm-msg--cont" id="equipment-m6" data-sent="2026-11-10T10:20" tabindex="-1"><p class="rm-msg__from rm-vh">Sophie</p><p class="rm-msg__text">i just checked the calendar and saw no one was using it</p></li>
+              <li class="rm-msg" id="equipment-m7" data-sent="2026-11-10T10:21" tabindex="-1"><p class="rm-msg__from">Tonya</p><p class="rm-msg__text">you have to ask before lending stuff out</p></li>
+              <li class="rm-msg" id="equipment-m8" data-sent="2026-11-10T10:22" tabindex="-1"><p class="rm-msg__from">Sophie</p><p class="rm-msg__text">i know.. i thought it would be okay</p></li>
+              <li class="rm-msg" id="equipment-m9" data-sent="2026-11-10T10:24" tabindex="-1"><p class="rm-msg__from">Tonya</p><p class="rm-msg__text">we’ve had things disappear before</p></li>
+              <li class="rm-msg" id="equipment-m10" data-sent="2026-11-10T11:38" tabindex="-1"><p class="rm-msg__from">Grace <time class="rm-msg__time" datetime="2026-11-10T11:38">11:38 am</time></p><a class="rm-quote" href="#equipment-m3"><span class="rm-vh">in reply to </span><span class="rm-quote__from">Sophie</span> <span class="rm-quote__text">but she’s bringing it back Thursday</span></a><p class="rm-msg__text">It’s coming back Thursday though, right?</p></li>
+              <li class="rm-msg" id="equipment-m11" data-sent="2026-11-10T11:40" tabindex="-1"><p class="rm-msg__from">Sophie</p><p class="rm-msg__text">yes ofc</p></li>
+              <li class="rm-msg" id="equipment-m12" data-sent="2026-11-10T11:41" tabindex="-1"><p class="rm-msg__from">Grace</p><p class="rm-msg__text">Then it’s not a big deal</p></li>
+              <li class="rm-msg" id="equipment-m13" data-sent="2026-11-10T11:52" tabindex="-1"><p class="rm-msg__from">Tonya</p><a class="rm-quote" href="#equipment-m12"><span class="rm-vh">in reply to </span><span class="rm-quote__from">Grace</span> <span class="rm-quote__text">Then it’s not a big deal</span></a><p class="rm-msg__text">that’s not the point</p></li>
+              <li class="rm-msg rm-msg--cont" id="equipment-m14" data-sent="2026-11-10T11:52" tabindex="-1"><p class="rm-msg__from rm-vh">Tonya</p><p class="rm-msg__text">we just have to be more careful with the equipment</p></li>
+              <li class="rm-msg" id="equipment-m15" data-sent="2026-11-10T12:05" tabindex="-1"><p class="rm-msg__from">Sophie</p><p class="rm-msg__text">i can ask her to bring it back tomorrow if you’re worried</p></li>
+              <li class="rm-msg" id="equipment-m16" data-sent="2026-11-10T12:06" tabindex="-1"><p class="rm-msg__from">Tonya</p><p class="rm-msg__text">i’m not asking you to get it back tomorrow. just ask next time.</p></li>
+              <li class="rm-day"><time datetime="2026-11-11">Wednesday, November 11</time></li>
+              <li class="rm-msg" id="equipment-m17" data-sent="2026-11-11T08:52" tabindex="-1"><p class="rm-msg__from">Sophie <time class="rm-msg__time" datetime="2026-11-11T08:52">8:52 am</time></p><p class="rm-msg__text">ok, i won’t do it again</p></li>
+              <li class="rm-msg" id="equipment-m18" data-sent="2026-11-11T09:34" tabindex="-1"><p class="rm-msg__from">Grace <time class="rm-msg__time" datetime="2026-11-11T09:34">9:34 am</time></p><p class="rm-msg__text">I borrowed a recorder last month without asking either</p></li>
+              <li class="rm-msg" id="equipment-m19" data-sent="2026-11-11T09:41" tabindex="-1"><p class="rm-msg__from">Tonya</p><p class="rm-msg__text">you’re not helping</p></li>
+              <li class="rm-msg rm-msg--cont" id="equipment-m20" data-sent="2026-11-11T09:41" tabindex="-1"><p class="rm-msg__from rm-vh">Tonya</p><p class="rm-msg__text">what’s the problem guys, it literally doesn’t cost anything to ask.</p></li>
+              <li class="rm-msg" id="equipment-m21" data-sent="2026-11-11T09:42" tabindex="-1"><p class="rm-msg__from">Grace</p><p class="rm-msg__text">Fair enough</p></li>
+              <li class="rm-msg" id="equipment-m22" data-sent="2026-11-11T09:45" tabindex="-1"><p class="rm-msg__from">Sophie</p><p class="rm-msg__text">should we start a list of everyone who’s ever taken something without asking?</p></li>
+              <li class="rm-msg" id="equipment-m23" data-sent="2026-11-11T09:46" tabindex="-1"><p class="rm-msg__from">Tonya</p><p class="rm-msg__text">Sophie</p></li>
+              <li class="rm-msg" id="equipment-m24" data-sent="2026-11-11T09:46" tabindex="-1"><p class="rm-msg__from">Sophie</p><p class="rm-msg__text">ok ok, i’m kidding</p></li>
+              <li class="rm-msg" id="equipment-m25" data-sent="2026-11-11T10:10" tabindex="-1"><p class="rm-msg__from">Grace <time class="rm-msg__time" datetime="2026-11-11T10:10">10:10 am</time></p><p class="rm-msg__text">We could actually make a sign-out sheet</p></li>
+              <li class="rm-msg" id="equipment-m26" data-sent="2026-11-11T10:31" tabindex="-1"><p class="rm-msg__from">Tonya <time class="rm-msg__time" datetime="2026-11-11T10:31">10:31 am</time></p><p class="rm-msg__text">yes, that would help</p></li>
+              <li class="rm-msg" id="equipment-m27" data-sent="2026-11-11T10:33" tabindex="-1"><p class="rm-msg__from">Sophie</p><p class="rm-msg__text">i’ll make it</p></li>
+              <li class="rm-msg" id="equipment-m28" data-sent="2026-11-11T10:33" tabindex="-1"><p class="rm-msg__from">Tonya</p><p class="rm-msg__text">thank you</p></li>
+            </ol>
+            <div class="rm-thread__actions"><button class="rm-action" type="button" data-dialog="reply" hidden>reply</button></div>
+          </div>
+        </div>
+      </article>
+      <article class="rm-entry" id="the-exhibition" data-category="conversations" aria-labelledby="the-exhibition-title">
+        <div class="rm-entry__main">
+          <header class="rm-entry__head">
+            <p class="rm-entry__cat">conversations</p>
+            <h2 class="rm-entry__title" id="the-exhibition-title" tabindex="-1">Opening on the 18th</h2>
+            <p class="rm-entry__meta">started by Grace · <time datetime="2026-11-09">nov 9</time></p>
+          </header>
+          <div class="rm-thread">
+            <ol class="rm-msgs">
+              <li class="rm-day"><time datetime="2026-11-09">Monday, November 9</time></li>
+              <li class="rm-msg" id="the-exhibition-m1" data-sent="2026-11-09T10:12" tabindex="-1"><p class="rm-msg__from">Grace <time class="rm-msg__time" datetime="2026-11-09T10:12">10:12 am</time></p><p class="rm-msg__text">Are we still opening on the 18th?</p></li>
+              <li class="rm-msg" id="the-exhibition-m2" data-sent="2026-11-09T11:47" tabindex="-1"><p class="rm-msg__from">Tonya <time class="rm-msg__time" datetime="2026-11-09T11:47">11:47 am</time></p><p class="rm-msg__text">yup. that’s the plan. why?</p></li>
+              <li class="rm-msg" id="the-exhibition-m3" data-sent="2026-11-09T11:49" tabindex="-1"><p class="rm-msg__from">Grace</p><p class="rm-msg__text">I need to send the announcement out this week if we are</p></li>
+              <li class="rm-msg" id="the-exhibition-m4" data-sent="2026-11-09T12:30" tabindex="-1"><p class="rm-msg__from">Tonya <time class="rm-msg__time" datetime="2026-11-09T12:30">12:30 pm</time></p><p class="rm-msg__text">yes, let’s keep the 18th</p></li>
+              <li class="rm-msg" id="the-exhibition-m5" data-sent="2026-11-09T12:31" tabindex="-1"><p class="rm-msg__from">Grace</p><p class="rm-msg__text">Okay. Sophie, can you send me the image you wanted to use?</p></li>
+              <li class="rm-msg" id="the-exhibition-m6" data-sent="2026-11-09T16:58" tabindex="-1"><p class="rm-msg__from">Sophie <time class="rm-msg__time" datetime="2026-11-09T16:58">4:58 pm</time></p><p class="rm-msg__text">yes, i’ll send it when i get home</p></li>
+              <li class="rm-msg" id="the-exhibition-m7" data-sent="2026-11-09T17:03" tabindex="-1"><p class="rm-msg__from">Milo</p><p class="rm-msg__text">does anyone have a tie they don’t want?</p></li>
+              <li class="rm-msg" id="the-exhibition-m8" data-sent="2026-11-09T17:10" tabindex="-1"><p class="rm-msg__from">Grace</p><p class="rm-msg__text">What?</p></li>
+              <li class="rm-msg" id="the-exhibition-m9" data-sent="2026-11-09T17:10" tabindex="-1"><p class="rm-msg__from">Milo</p><p class="rm-msg__text">yeah like a suit tie or whatever</p></li>
+              <li class="rm-msg" id="the-exhibition-m10" data-sent="2026-11-09T17:26" tabindex="-1"><p class="rm-msg__from">Sophie <time class="rm-msg__time" datetime="2026-11-09T17:26">5:26 pm</time></p><p class="rm-msg__text">i think i have one!</p></li>
+              <li class="rm-msg" id="the-exhibition-m11" data-sent="2026-11-09T17:26" tabindex="-1"><p class="rm-msg__from">Milo</p><p class="rm-msg__text">oh really?</p></li>
+              <li class="rm-msg" id="the-exhibition-m12" data-sent="2026-11-09T17:31" tabindex="-1"><p class="rm-msg__from">Sophie</p><p class="rm-msg__text">yeah, i just have to find it</p></li>
+              <li class="rm-msg rm-msg--cont" id="the-exhibition-m13" data-sent="2026-11-09T17:31" tabindex="-1"><p class="rm-msg__from rm-vh">Sophie</p><p class="rm-msg__text">i haven’t seen it since Catholic school but i’m pretty sure it’s still at my parents’ house</p></li>
+              <li class="rm-msg rm-msg--cont" id="the-exhibition-m14" data-sent="2026-11-09T17:32" tabindex="-1"><p class="rm-msg__from rm-vh">Sophie</p><p class="rm-msg__text">i was a very good boy lol</p></li>
+              <li class="rm-msg" id="the-exhibition-m15" data-sent="2026-11-09T17:33" tabindex="-1"><p class="rm-msg__from">Milo</p><p class="rm-msg__text">facts</p></li>
+              <li class="rm-msg rm-msg--cont" id="the-exhibition-m16" data-sent="2026-11-09T17:33" tabindex="-1"><p class="rm-msg__from rm-vh">Milo</p><p class="rm-msg__text">thanksss</p></li>
+              <li class="rm-msg rm-msg--cont" id="the-exhibition-m17" data-sent="2026-11-09T17:40" tabindex="-1"><p class="rm-msg__from rm-vh">Milo</p><p class="rm-msg__text">what color is it?</p></li>
+              <li class="rm-msg" id="the-exhibition-m18" data-sent="2026-11-09T19:52" tabindex="-1"><p class="rm-msg__from">Sophie <time class="rm-msg__time" datetime="2026-11-09T19:52">7:52 pm</time></p><p class="rm-msg__text">navy and green</p></li>
+              <li class="rm-msg rm-msg--cont" id="the-exhibition-m19" data-sent="2026-11-09T19:52" tabindex="-1"><p class="rm-msg__from rm-vh">Sophie</p><p class="rm-msg__text">i think… why?</p></li>
+              <li class="rm-msg" id="the-exhibition-m20" data-sent="2026-11-09T19:53" tabindex="-1"><p class="rm-msg__from">Milo</p><p class="rm-msg__text">i want to make a collar</p></li>
+              <li class="rm-msg" id="the-exhibition-m21" data-sent="2026-11-09T19:55" tabindex="-1"><p class="rm-msg__from">Sophie</p><p class="rm-msg__text">ah, of course you do!</p></li>
+              <li class="rm-msg" id="the-exhibition-m22" data-sent="2026-11-09T19:55" tabindex="-1"><p class="rm-msg__from">Milo</p><p class="rm-msg__text">hey what does that mean?!</p></li>
+              <li class="rm-msg" id="the-exhibition-m23" data-sent="2026-11-09T19:56" tabindex="-1"><p class="rm-msg__from">Sophie</p><p class="rm-msg__text">nothing.</p></li>
+              <li class="rm-msg rm-msg--cont" id="the-exhibition-m24" data-sent="2026-11-09T19:56" tabindex="-1"><p class="rm-msg__from rm-vh">Sophie</p><p class="rm-msg__text">it’s very you! can’t wait to see it when you’re done with it</p></li>
+              <li class="rm-msg" id="the-exhibition-m25" data-sent="2026-11-09T20:20" tabindex="-1"><p class="rm-msg__from">Milo <time class="rm-msg__time" datetime="2026-11-09T20:20">8:20 pm</time></p><p class="rm-msg__text">oh, i’ll show you</p></li>
+              <li class="rm-msg rm-msg--cont" id="the-exhibition-m26" data-sent="2026-11-09T20:20" tabindex="-1"><p class="rm-msg__from rm-vh">Milo</p><p class="rm-msg__text">but, is that a yes?</p></li>
+              <li class="rm-msg" id="the-exhibition-m27" data-sent="2026-11-09T21:05" tabindex="-1"><p class="rm-msg__from">Sophie <time class="rm-msg__time" datetime="2026-11-09T21:05">9:05 pm</time></p><p class="rm-msg__text">if i find it it’s yours :)</p></li>
+              <li class="rm-day"><time datetime="2026-11-10">Tuesday, November 10</time></li>
+              <li class="rm-msg" id="the-exhibition-m28" data-sent="2026-11-10T10:02" tabindex="-1"><p class="rm-msg__from">Grace <time class="rm-msg__time" datetime="2026-11-10T10:02">10:02 am</time></p><a class="rm-quote" href="#the-exhibition-m6"><span class="rm-vh">in reply to </span><span class="rm-quote__from">Sophie</span> <span class="rm-quote__text">yes, i’ll send it when i get home</span></a><p class="rm-msg__text">Sophie did you send the image?</p></li>
+              <li class="rm-msg" id="the-exhibition-m29" data-sent="2026-11-10T13:15" tabindex="-1"><p class="rm-msg__from">Sophie <time class="rm-msg__time" datetime="2026-11-10T13:15">1:15 pm</time></p><p class="rm-msg__text">sending it to your email now 😭</p></li>
+            </ol>
+            <div class="rm-thread__actions"><button class="rm-action" type="button" data-dialog="reply" hidden>reply</button></div>
+          </div>
+        </div>
+      </article>
+
+      <article class="rm-entry" id="workshop-on-sunday" data-category="conversations" data-subject="workshop on sunday" aria-labelledby="workshop-on-sunday-title">
+        <div class="rm-entry__main">
+          <header class="rm-entry__head">
+            <p class="rm-entry__cat">conversations</p>
+            <h2 class="rm-entry__title" id="workshop-on-sunday-title" tabindex="-1"><span class="rm-subject">workshop on sunday</span></h2>
+            <p class="rm-entry__meta">started by Inez · <time datetime="2026-11-16">nov 16</time></p>
+          </header>
+          <div class="rm-thread">
+            <ol class="rm-msgs">
+              <li class="rm-day"><time datetime="2026-11-16">Monday, November 16</time></li>
+              <li class="rm-msg" id="workshop-on-sunday-m1" data-sent="2026-11-16T11:24" tabindex="-1"><p class="rm-msg__from">Inez <time class="rm-msg__time" datetime="2026-11-16T11:24">11:24 am</time></p><p class="rm-msg__text">hey Milo! are we still meeting tomorrow to set up for Sunday?</p></li>
+              <li class="rm-msg" id="workshop-on-sunday-m2" data-sent="2026-11-16T12:06" tabindex="-1"><p class="rm-msg__from">Milo <time class="rm-msg__time" datetime="2026-11-16T12:06">12:06 pm</time></p><p class="rm-msg__text">yes</p></li>
+              <li class="rm-msg rm-msg--cont" id="workshop-on-sunday-m3" data-sent="2026-11-16T12:06" tabindex="-1"><p class="rm-msg__from rm-vh">Milo</p><p class="rm-msg__text">i can be there around 2</p></li>
+              <li class="rm-msg" id="workshop-on-sunday-m4" data-sent="2026-11-16T12:09" tabindex="-1"><p class="rm-msg__from">Inez</p><p class="rm-msg__text">perfect!</p></li>
+              <li class="rm-msg rm-msg--cont" id="workshop-on-sunday-m5" data-sent="2026-11-16T12:10" tabindex="-1"><p class="rm-msg__from rm-vh">Inez</p><p class="rm-msg__text">i was thinking we could leave some materials out for people to experiment with before we start</p></li>
+              <li class="rm-msg" id="workshop-on-sunday-m6" data-sent="2026-11-16T12:13" tabindex="-1"><p class="rm-msg__from">Milo</p><p class="rm-msg__text">yeah i have some rubber scraps</p></li>
+              <li class="rm-msg rm-msg--cont" id="workshop-on-sunday-m7" data-sent="2026-11-16T12:13" tabindex="-1"><p class="rm-msg__from rm-vh">Milo</p><p class="rm-msg__text">and a bunch of fasteners</p></li>
+              <li class="rm-msg" id="workshop-on-sunday-m8" data-sent="2026-11-16T12:15" tabindex="-1"><p class="rm-msg__from">Inez</p><p class="rm-msg__text">amazing. i’ll bring fabric and some wire</p></li>
+              <li class="rm-msg rm-msg--cont" id="workshop-on-sunday-m9" data-sent="2026-11-16T12:18" tabindex="-1"><p class="rm-msg__from rm-vh">Inez</p><p class="rm-msg__text">also, sorry if this is a weird question, but were you wearing a nozzle when i saw you on Tuesday?</p></li>
+              <li class="rm-msg" id="workshop-on-sunday-m10" data-sent="2026-11-16T12:21" tabindex="-1"><p class="rm-msg__from">Milo</p><p class="rm-msg__text">yeah lol</p></li>
+              <li class="rm-msg" id="workshop-on-sunday-m11" data-sent="2026-11-16T12:22" tabindex="-1"><p class="rm-msg__from">Inez</p><p class="rm-msg__text">oh okay!! i wasn’t sure if it was part of something you were working on</p></li>
+              <li class="rm-msg" id="workshop-on-sunday-m12" data-sent="2026-11-16T12:24" tabindex="-1"><p class="rm-msg__from">Milo</p><p class="rm-msg__text">no i just wear it sometimes</p></li>
+              <li class="rm-msg" id="workshop-on-sunday-m13" data-sent="2026-11-16T12:25" tabindex="-1"><p class="rm-msg__from">Inez</p><p class="rm-msg__text">got it :)</p></li>
+              <li class="rm-msg rm-msg--cont" id="workshop-on-sunday-m14" data-sent="2026-11-16T12:25" tabindex="-1"><p class="rm-msg__from rm-vh">Inez</p><p class="rm-msg__text">it looked really good on you btw</p></li>
+              <li class="rm-msg" id="workshop-on-sunday-m15" data-sent="2026-11-16T12:27" tabindex="-1"><p class="rm-msg__from">Milo</p><p class="rm-msg__text">thanks!</p></li>
+              <li class="rm-msg" id="workshop-on-sunday-m16" data-sent="2026-11-16T12:29" tabindex="-1"><p class="rm-msg__from">Inez</p><p class="rm-msg__text">anyway, do we have enough scissors? i think we only had two last time</p></li>
+              <li class="rm-msg" id="workshop-on-sunday-m17" data-sent="2026-11-16T12:31" tabindex="-1"><p class="rm-msg__from">Milo</p><p class="rm-msg__text">i have three at home</p></li>
+              <li class="rm-msg" id="workshop-on-sunday-m18" data-sent="2026-11-16T12:31" tabindex="-1"><p class="rm-msg__from">Inez</p><p class="rm-msg__text">could you bring them?</p></li>
+              <li class="rm-msg" id="workshop-on-sunday-m19" data-sent="2026-11-16T12:32" tabindex="-1"><p class="rm-msg__from">Milo</p><p class="rm-msg__text">yes</p></li>
+            </ol>
+            <div class="rm-thread__actions"><button class="rm-action" type="button" data-dialog="reply" hidden>reply</button></div>
+          </div>
+        </div>
+      </article>
+
+      <article class="rm-entry" id="conversation-1114" data-category="conversations" data-subject="" aria-labelledby="conversation-1114-title">
+        <div class="rm-entry__main">
+          <header class="rm-entry__head">
+            <p class="rm-entry__cat">conversations</p>
+            <h2 class="rm-entry__title" id="conversation-1114-title" tabindex="-1"><span class="rm-subject"></span></h2>
+            <p class="rm-entry__meta">started by Ulises · <time datetime="2026-11-14">nov 14</time></p>
+          </header>
+          <div class="rm-thread">
+            <ol class="rm-msgs">
+              <li class="rm-day"><time datetime="2026-11-14">Saturday, November 14</time></li>
+              <li class="rm-msg" id="conversation-1114-m1" data-sent="2026-11-14T15:17" tabindex="-1"><p class="rm-msg__from">Ulises <time class="rm-msg__time" datetime="2026-11-14T15:17">3:17 pm</time></p><p class="rm-msg__text">.</p></li>
+              <li class="rm-msg" id="conversation-1114-m2" data-sent="2026-11-14T15:42" tabindex="-1"><p class="rm-msg__from">Sophie <time class="rm-msg__time" datetime="2026-11-14T15:42">3:42 pm</time></p><p class="rm-msg__text">?</p></li>
+              <li class="rm-msg" id="conversation-1114-m3" data-sent="2026-11-14T15:43" tabindex="-1"><p class="rm-msg__from">Ulises</p><p class="rm-msg__text">wrong button</p></li>
+              <li class="rm-msg" id="conversation-1114-m4" data-sent="2026-11-14T15:43" tabindex="-1"><p class="rm-msg__from">Sophie</p><p class="rm-msg__text">lmao</p></li>
+              <li class="rm-msg" id="conversation-1114-m5" data-sent="2026-11-14T15:44" tabindex="-1"><p class="rm-msg__from">Ulises</p><p class="rm-msg__text">how do i delete this</p></li>
+              <li class="rm-msg" id="conversation-1114-m6" data-sent="2026-11-14T15:45" tabindex="-1"><p class="rm-msg__from">Sophie</p><p class="rm-msg__text">idk 😭</p></li>
+              <li class="rm-msg" id="conversation-1114-m7" data-sent="2026-11-14T15:46" tabindex="-1"><p class="rm-msg__from">Ulises</p><p class="rm-msg__text">ok</p></li>
+            </ol>
+            <div class="rm-thread__actions"><button class="rm-action" type="button" data-dialog="reply" hidden>reply</button></div>
+          </div>
+        </div>
+      </article>
+
+      <article class="rm-entry rm-entry--doc" id="shared-calendar" data-category="documents" aria-labelledby="shared-calendar-title">
+        <div class="rm-entry__main">
+          <header class="rm-entry__head">
+            <p class="rm-entry__cat">shared documents</p>
+            <h2 class="rm-entry__title" id="shared-calendar-title" tabindex="-1">shared calendar</h2>
+            <p class="rm-entry__meta">November – December 2026</p>
+          </header>
+
+          <div class="rm-doc rm-cal" id="rm-cal" data-printable>
+            <p class="rm-doc__mark" aria-hidden="true">SALOME</p>
+            <p class="rm-doc__head">Shared calendar</p>
+          <p class="rm-cal__key"><span class="rm-cal__mark" aria-hidden="true">■</span>Open to the public</p>
+            <table class="rm-cal__table">
+            <thead>
+              <tr><th scope="col">Date</th><th scope="col">What</th><th scope="col">Notes</th></tr>
+            </thead>
+            <tbody>
+              <tr class="rm-cal__month"><th scope="rowgroup" colspan="3">November 2026</th></tr>
+              <tr><td class="rm-cal__when">13 <span class="rm-cal__day">Fri</span></td><td>Exhibition announcement goes out.</td><td>Grace sends it once Sophie’s image is in.</td></tr>
+              <tr class="rm-cal__public"><td class="rm-cal__when">14 <span class="rm-cal__day">Sat</span></td><td><span class="rm-cal__mark" aria-hidden="true">■</span><span class="rm-vh">Public: </span>Screening, 7 pm.</td><td>Tonya is closing.</td></tr>
+              <tr><td class="rm-cal__when">16 <span class="rm-cal__day">Mon</span></td><td>Clear the back room tables and prepare the front room for the exhibition.</td><td></td></tr>
+              <tr><td class="rm-cal__when">17 <span class="rm-cal__day">Tue</span></td><td>Installation and sound check.</td><td>Confirm the projector and speakers are working.</td></tr>
+              <tr><td class="rm-cal__when">17 <span class="rm-cal__day">Tue</span></td><td>Workshop preparation.</td><td>Milo checks materials and the workbench.</td></tr>
+              <tr class="rm-cal__public" data-more><td class="rm-cal__when">18 <span class="rm-cal__day">Wed</span></td><td><span class="rm-cal__mark" aria-hidden="true">■</span><span class="rm-vh">Public: </span>Exhibition opening + music, 7 pm.</td><td>Tonya performs a live electronic set later in the evening. Free entry.</td></tr>
+              <tr class="rm-cal__public" data-more><td class="rm-cal__when">19–23</td><td><span class="rm-cal__mark" aria-hidden="true">■</span><span class="rm-vh">Public: </span>Exhibition open by appointment.</td><td></td></tr>
+              <tr class="rm-cal__public" data-more><td class="rm-cal__when">22 <span class="rm-cal__day">Sun</span></td><td><span class="rm-cal__mark" aria-hidden="true">■</span><span class="rm-vh">Public: </span>Making things that move, workshop with Milo and guest artist Inez, 2 to 5 pm.</td><td>Free, limited space.</td></tr>
+              <tr class="rm-cal__public" data-more><td class="rm-cal__when">24 <span class="rm-cal__day">Tue</span></td><td><span class="rm-cal__mark" aria-hidden="true">■</span><span class="rm-vh">Public: </span>Friends at Salome, dinner from 6 pm.</td><td>Bring something to share.</td></tr>
+            </tbody>
+            <tbody data-more>
+              <tr class="rm-cal__month"><th scope="rowgroup" colspan="3">December 2026</th></tr>
+              <tr data-more><td class="rm-cal__when">2 <span class="rm-cal__day">Wed</span></td><td>Prepare tables and clear space for Brackwater tables.</td><td></td></tr>
+              <tr class="rm-cal__public" data-more><td class="rm-cal__when">5 <span class="rm-cal__day">Sat</span></td><td><span class="rm-cal__mark" aria-hidden="true">■</span><span class="rm-vh">Public: </span>Brackwater tables, 12 to 5 pm.</td><td>Local artists, makers, publications, and small objects.</td></tr>
+              <tr data-more><td class="rm-cal__when">10 <span class="rm-cal__day">Thu</span></td><td>Collective meeting, 6 pm.</td><td>The end of the year, equipment, and plans for January.</td></tr>
+              <tr data-more><td class="rm-cal__when">18 <span class="rm-cal__day">Fri</span></td><td>End-of-year gathering, from 7 pm.</td><td>Food, music, and friends. No exhibition or formal program.</td></tr>
+              <tr data-more><td class="rm-cal__when">21 <span class="rm-cal__day">Mon</span></td><td>Last regular working day before the holiday break.</td><td>Clean shared spaces, return borrowed equipment, and check the building.</td></tr>
+              <tr data-more><td class="rm-cal__when">22 – Jan 3</td><td>Salome closed for regular activities.</td><td>Visits by arrangement only.</td></tr>
+            </tbody>
+          </table>
+          </div>
+          <div class="rm-doc__actions">
+            <button class="rm-doc__toggle" type="button" aria-expanded="false" aria-controls="rm-cal" data-open="show the full calendar" data-close="show less" hidden>show the full calendar</button>
+            <a class="rm-doc__pdf" href="salomeRoom.html?print=shared-calendar">view pdf <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </article>
+
+      <article class="rm-entry rm-entry--doc" id="building-notes" data-category="documents" aria-labelledby="building-notes-title">
+        <div class="rm-entry__main">
+          <header class="rm-entry__head">
+            <p class="rm-entry__cat">shared documents</p>
+            <h2 class="rm-entry__title" id="building-notes-title" tabindex="-1">building notes</h2>
+            <p class="rm-entry__meta">ground floor and upper floor</p>
+          </header>
+
+          <figure class="rm-plan" id="rm-plan">
+            <div class="rm-plan__sheets">
+              <svg class="rm-plan__sheet" viewBox="290 0 450 1000" role="img" aria-labelledby="rm-plan-g-t rm-plan-g-d">
+                <title id="rm-plan-g-t">ground floor</title>
+                <desc id="rm-plan-g-d">Plan of the ground floor and courtyard. From the street: the front room (exhibition / events) behind the entrance and two windows, with the stairs up on the right; equipment storage; the back room (working space) with the kitchenette and bathroom; the back door to the courtyard. Notes on the plan: please clear tables before openings (back room). projector sign-out sheet is on the door (equipment storage). please lock after closing (back door). cover this when it rains (a workbench pencilled into the courtyard).</desc>
+
+                <text class="pl-sheet" x="303" y="44">ground floor</text>
+
+                <rect class="pl-yard-edge" x="303" y="72" width="424" height="206"/>
+                <path class="pl-yard-edge pl-yard-edge--in" d="M308 278 V77 H722 V278"/>
+                <text class="pl-label" x="520" y="168" text-anchor="middle">Courtyard</text>
+
+                <path class="pl-wall" d="M309 278 V983 M721 278 V983 M303 284 H365 M435 284 H527 M572 284 H612 M665 284 H727 M303 977 H343 M457 977 H485 M533 977 H557 M690 977 H727"/>
+                <g class="pl-win">
+                  <rect x="365" y="280" width="70" height="8"/>
+                  <rect x="612" y="280" width="53" height="8"/>
+                  <rect x="343" y="973" width="114" height="8"/>
+                  <rect x="557" y="973" width="133" height="8"/>
+                </g>
+                <path class="pl-swing" d="M527 284 V240 A44 44 0 0 1 571 284"/>
+                <path class="pl-swing" d="M485 977 V931 A48 46 0 0 1 533 977"/>
+
+                <path class="pl-part" d="M583 290 V326 M583 370 V517 H597 M583 410 H721 M637 515 H721 M510 572 H651 M695 572 H721 M510 572 V712 H657 V870 M315 625 H441 M490 625 H510"/>
+                <path class="pl-counter" d="M585 384 H717 M585 389 H717"/>
+                <path class="pl-swing" d="M597 517 V477 A40 40 0 0 1 637 517"/>
+                <path class="pl-swing" d="M695 572 V528 A44 44 0 0 0 651 572"/>
+                <path class="pl-swing" d="M490 625 V577 A49 48 0 0 0 441 625"/>
+
+                <g class="pl-stair">
+                  <rect x="657" y="735" width="60" height="133"/>
+                  <path d="M657 748.3 H717 M657 761.6 H717 M657 774.9 H717 M657 788.2 H717 M657 801.5 H717 M657 814.8 H717 M657 828.1 H717 M657 841.4 H717 M657 854.7 H717"/>
+                  <path class="pl-arrow" d="M688 864 V812 M681 822 L688 810 L695 822"/>
+                </g>
+
+                <text class="pl-label" x="446" y="433" text-anchor="middle">Back Room</text>
+                <text class="pl-label pl-label--sub" x="446" y="459" text-anchor="middle">(Working Space)</text>
+                <text class="pl-label" x="651" y="350" text-anchor="middle">Kitchenette</text>
+                <text class="pl-label" x="655" y="460" text-anchor="middle">Bathroom</text>
+                <text class="pl-label" x="619" y="631" text-anchor="middle">Equipment</text>
+                <text class="pl-label" x="616" y="658" text-anchor="middle">Storage</text>
+                <text class="pl-label" x="487" y="796" text-anchor="middle">Front Room</text>
+                <text class="pl-label pl-label--sub" x="491" y="825" text-anchor="middle">(Exhibition / Events)</text>
+
+                <path class="pl-pencil-line pl-sketch" d="M612 104 L706 101 L707 129 L613 131 Z M618 131 L617 139 M701 129 L703 137"/>
+                <g class="pl-note" transform="rotate(-4 652 168)">
+                  <rect x="590" y="142" width="126" height="54"/>
+                  <text x="653" y="165" text-anchor="middle">cover this</text>
+                  <text x="653" y="186" text-anchor="middle">when it rains</text>
+                </g>
+                <g class="pl-pencil">
+                  <text x="368" y="226">please lock</text>
+                  <text x="368" y="248">after closing</text>
+                  <path d="M470 240 Q500 246 516 262 M507 262 L517 263 L515 253"/>
+                </g>
+                <g class="pl-note pl-note--b" transform="rotate(3 412 512)">
+                  <rect x="340" y="486" width="148" height="54"/>
+                  <text x="414" y="509" text-anchor="middle">please clear tables</text>
+                  <text x="414" y="530" text-anchor="middle">before openings</text>
+                </g>
+                <g class="pl-note" transform="rotate(-3 566 546)">
+                  <rect x="500" y="519" width="140" height="54"/>
+                  <text x="570" y="542" text-anchor="middle">projector sign-out</text>
+                  <text x="570" y="563" text-anchor="middle">sheet is on the door</text>
+                </g>
+              </svg>
+
+              <svg class="rm-plan__sheet" viewBox="808 0 450 1000" role="img" aria-labelledby="rm-plan-u-t rm-plan-u-d">
+              <title id="rm-plan-u-t">upper floor</title>
+              <desc id="rm-plan-u-d">Plan of the upper floor, the same footprint as the ground floor. The upstairs room (shared work space) takes most of the floor. The stairs come up along the right wall directly above the ground-floor stairs and arrive at the back end, onto the open floor. The archive / storage room is in the back corner, with one door from the upstairs room. Three windows at the back and three at the front. Note on the plan: check after rain (the front window beside the stairs).</desc>
+
+              <text class="pl-sheet" x="821" y="44">upper floor</text>
+
+              <path class="pl-wall" d="M827 278 V983 M1234 278 V983 M821 284 H895 M958 284 H1018 M1078 284 H1140 M1198 284 H1240 M821 977 H878 M942 977 H1000 M1062 977 H1123 M1189 977 H1240"/>
+              <g class="pl-win">
+                <rect x="895" y="280" width="63" height="8"/>
+                <rect x="1018" y="280" width="60" height="8"/>
+                <rect x="1140" y="280" width="58" height="8"/>
+                <rect x="878" y="973" width="64" height="8"/>
+                <rect x="1000" y="973" width="62" height="8"/>
+                <rect x="1123" y="973" width="66" height="8"/>
+              </g>
+
+              <path class="pl-part" d="M1100 290 V440 H1120 M1162 440 H1228"/>
+              <path class="pl-swing" d="M1162 440 V398 A42 42 0 0 0 1120 440"/>
+
+              <g class="pl-stair">
+                <rect x="1168" y="735" width="60" height="133"/>
+                <path d="M1168 748.3 H1228 M1168 761.6 H1228 M1168 774.9 H1228 M1168 788.2 H1228 M1168 801.5 H1228 M1168 814.8 H1228 M1168 828.1 H1228 M1168 841.4 H1228 M1168 854.7 H1228"/>
+                <path class="pl-arrow" d="M1198 742 V858 M1191 848 L1198 860 L1205 848"/>
+              </g>
+              <path class="pl-rail" d="M1168 735 V868 H1228"/>
+
+              <text class="pl-label" x="1000" y="560" text-anchor="middle">Upstairs Room</text>
+              <text class="pl-label pl-label--sub" x="1004" y="589" text-anchor="middle">(Shared Work Space)</text>
+              <text class="pl-label" x="1164" y="356" text-anchor="middle">Archive /</text>
+              <text class="pl-label" x="1164" y="382" text-anchor="middle">Storage</text>
+
+              <g class="pl-note" transform="rotate(-4 1088 924)">
+                <rect x="1030" y="902" width="116" height="46"/>
+                <text x="1088" y="923" text-anchor="middle">check after</text>
+                <text x="1088" y="941" text-anchor="middle">rain</text>
+              </g>
+              <path class="pl-pencil-line" d="M1146 930 Q1160 936 1158 962 M1152 956 L1158 965 L1164 957"/>
+            </svg>
+            </div>
+            <figcaption class="rm-plan__notes">
+              <p>Salome occupies a narrow, two-story former commercial building near the center of Brackwater.</p>
+              <p>The ground floor originally served as retail space, with storage and offices above.</p>
+              <p>The front has a glass entrance and two large windows facing the street. SALOME is painted on the inside of one window.</p>
+              <p>The front room is the largest space and is used for exhibitions, screenings, performances, and gatherings.</p>
+              <p>The back room contains worktables, tools, materials, shelving, and a small kitchenette.</p>
+              <p>Equipment storage contains projectors, speakers, recorders, cables, and supplies.</p>
+              <p>The upstairs room contains mismatched desks and chairs and is used for writing, editing, meetings, and quieter work.</p>
+              <p>A small upstairs storage room contains archives, publications, spare furniture, and old work.</p>
+              <p>The window above the staircase doesn’t seal properly during heavy rain.</p>
+              <p class="rm-plan__sub">Rear courtyard</p>
+              <p>A narrow, open-air concrete yard behind the building, accessible through the back room.</p>
+              <p>It is partially enclosed by neighboring buildings and a weathered fence.</p>
+              <p>It contains a workbench, mismatched chairs, and materials that are regularly moved around.</p>
+              <p>There is an exterior light above the back door and a small sheltered area beside the entrance.</p>
+            </figcaption>
+          </figure>
+          <div class="rm-doc__actions">
+            <button class="rm-doc__toggle" type="button" aria-expanded="false" aria-controls="rm-plan" data-open="enlarge plan" data-close="reduce plan" hidden>enlarge plan</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="rm-entry rm-entry--doc" id="access-to-the-space" data-category="documents" aria-labelledby="access-to-the-space-title">
+        <div class="rm-entry__main">
+          <header class="rm-entry__head">
+            <p class="rm-entry__cat">shared documents</p>
+            <h2 class="rm-entry__title" id="access-to-the-space-title" tabindex="-1">access to the space</h2>
+            <p class="rm-entry__meta">Rob and Grace · Rev. 2026</p>
+          </header>
+
+          <div class="rm-doc rm-handout" id="rm-handout" data-printable>
+            <p class="rm-doc__mark">Salome</p>
+            <p class="rm-handout__title">Access to the space</p>
+            <p class="rm-handout__for">For members, collaborators, and anyone using the building outside public hours.</p>
+
+            <h3>Getting in</h3>
+            <p>The front door is usually locked outside scheduled events.</p>
+            <p>If you’re visiting, arrange a time with someone from Salome beforehand. Please don’t assume somebody will be there just because the lights are on.</p>
+            <p>If you’ve been given a key, don’t make copies or pass it to anyone else without checking with the group.</p>
+
+            <h3>Opening up</h3>
+            <p>Turn on the lights you need. The switches for the front room are beside the entrance.</p>
+            <p>Check that the back door is closed before leaving the building unattended.</p>
+            <p>If you’re expecting visitors, make sure someone is available to let them in.</p>
+
+            <h3>Using the rooms</h3>
+            <p>The front room is used for exhibitions, screenings, performances, and gatherings. Please check the shared calendar before setting anything up there.</p>
+            <p>The back room is a working space. You’re welcome to use the tables, but leave enough room for other people to work.</p>
+            <p>The upstairs room is generally quieter. If someone is working there, ask before bringing a group upstairs.</p>
+            <p>Don’t move or dismantle someone else’s work without asking.</p>
+
+            <h3>Equipment</h3>
+            <p>Projectors, speakers, recorders, cables, and other shared equipment are kept in storage.</p>
+            <p>If you take something out of the building, write down what you’ve borrowed, where it’s going, and when you expect to return it.</p>
+            <p>Please check with the group before lending equipment to anyone outside Salome.</p>
+            <p>If something stops working, tell someone. Don’t put it back on the shelf and hope nobody notices.</p>
+
+            <h3>Courtyard</h3>
+            <p>The courtyard is available for working, taking breaks, and spending time outside.</p>
+            <p>Please cover the workbench when you’re finished, especially if rain is expected.</p>
+            <p>Don’t leave materials against the fence or block the back door.</p>
+            <p>If you’re working with something that produces fumes or dust, be mindful of people inside and in the neighboring buildings.</p>
+
+            <h3>Closing up</h3>
+            <p>Before leaving, please:</p>
+            <ol class="rm-handout__steps">
+              <li>Put away shared equipment and return furniture to where you found it.</li>
+              <li>Check the upstairs window, particularly if it’s been raining.</li>
+              <li>Make sure the kitchenette is clean and the refrigerator is closed.</li>
+              <li>Turn off lights and any equipment that shouldn’t be left running.</li>
+              <li>Lock the courtyard door and front entrance.</li>
+            </ol>
+            <p>If you’re the last person leaving, you’re responsible for checking the whole building.</p>
+
+            <h3>Something wrong?</h3>
+            <p>If you notice a leak, broken lock, electrical problem, or anything that might make the space unsafe, tell the group as soon as possible.</p>
+            <p>If something needs fixing, please don’t assume someone else has already mentioned it.</p>
+
+            <h3>One last thing</h3>
+            <p>Salome is a shared space. Some people come here to work, others to spend time together, and often it’s both.</p>
+            <p>Please be considerate of whoever else is here, and leave the building in a condition that makes it easy for the next person to use.</p>
+
+            <p class="rm-handout__credit">Prepared by Rob and Grace<br>Revised as needed</p>
+            <p class="rm-handout__rev">Rev. 2026</p>
+          </div>
+          <div class="rm-doc__actions">
+            <button class="rm-doc__toggle" type="button" aria-expanded="false" aria-controls="rm-handout" data-open="open the full handout" data-close="show less" hidden>open the full handout</button>
+            <a class="rm-doc__pdf" href="salomeRoom.html?print=access-to-the-space">view pdf <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </article>
+
+      <article class="rm-entry rm-entry--board" id="upcoming-events" data-category="notices" aria-labelledby="upcoming-events-title">
+        <div class="rm-entry__main">
+          <header class="rm-entry__head">
+            <p class="rm-entry__cat">notices</p>
+            <h2 class="rm-entry__title" id="upcoming-events-title" tabindex="-1">upcoming events</h2>
+          </header>
+
+          <ul class="rm-board">
+            <li class="rm-notice rm-notice--opening">
+              <h3 class="rm-notice__date">18 / exhibition + music</h3>
+              <p class="rm-notice__title">new work / late night</p>
+              <p>an evening of new work by Salome members, with installations, moving image, sound, and other things we’ve been working on.</p>
+              <p>the exhibition opens at 7 pm. later in the evening, Tonya will perform a live electronic set, followed by music until late.</p>
+              <p>come for the work, stay for the music, or just come to see everyone.</p>
+              <p class="rm-notice__key">doors at 7 pm. free entry.</p>
+              <p class="rm-notice__small">the exhibition will remain open by appointment after the opening.</p>
+            </li>
+            <li class="rm-notice rm-notice--workshop">
+              <h3 class="rm-notice__date">22 / workshop</h3>
+              <p class="rm-notice__title">making things that move</p>
+              <p class="rm-notice__with">with Milo and guest artist Inez</p>
+              <p>an afternoon workshop exploring simple moving mechanisms using fabric, wire, cardboard, and found materials.</p>
+              <p>no previous experience necessary. materials provided, although you’re welcome to bring something you’d like to work with.</p>
+              <p class="rm-notice__key">2 to 5 pm. free, with limited space.</p>
+              <p>contact us for more details.</p>
+            </li>
+            <li class="rm-notice rm-notice--friends">
+              <h3 class="rm-notice__date">24 / friends at Salome</h3>
+              <p class="rm-notice__title">dinner and whatever else</p>
+              <p>we’re having people over for dinner. bring something to share if you can, but please come even if you can’t.</p>
+              <p>friends, neighbors, and people we haven’t seen in a while are welcome.</p>
+              <p class="rm-notice__key">from 6 pm. no program.</p>
+            </li>
+            <li class="rm-notice rm-notice--tables">
+              <h3 class="rm-notice__date">05 / community event</h3>
+              <p class="rm-notice__title">Brackwater tables</p>
+              <p>an afternoon for local artists, makers, and anyone with something they’d like to share.</p>
+              <p>we’ll have tables for prints, small objects, publications, clothing, handmade things, and work in progress. selling is welcome, but not required.</p>
+              <p>you don’t need to be a member of Salome or have exhibited before.</p>
+              <p>contact us for more details. there’s no fee to participate.</p>
+              <p class="rm-notice__key">12 to 5 pm.</p>
+            </li>
+          </ul>
+        </div>
+      </article>
+    </div>
+
+    </div>
+    </div>
+
+    <dialog class="rm-dialog" id="rm-dialog" aria-labelledby="rm-dialog-title" aria-describedby="rm-dialog-text">
+      <div class="rm-dialog__body">
+        <h2 class="rm-dialog__title" id="rm-dialog-title"></h2>
+        <p class="rm-dialog__text" id="rm-dialog-text"></p>
+        <button class="rm-dialog__close" type="button">close</button>
+      </div>
+    </dialog>
+
+  </main>
+
+  <script src="../../scripts/salome.js"></script>
+  <script src="../../scripts/cruze.js"></script>
+</body>
+</html>

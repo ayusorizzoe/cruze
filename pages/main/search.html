@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" class="cruze">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Search results | Cruze</title>
+  <link rel="icon" href="../../media/cruze_Icon.ico" type="image/x-icon">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../../css/cruze.css">
+  <script>
+    /* Show the search in the bar instead of an address */
+    (function () {
+      var q = new URLSearchParams(location.search).get('q');
+      if (q) document.documentElement.setAttribute('data-browser-address', q);
+    })();
+  </script>
+</head>
+<body class="page-about">
+
+  <header class="top-bar">
+    <a href="../../index.html" class="top-link">&larr; Back to search</a>
+  </header>
+
+  <main class="about">
+
+    <section class="results" aria-labelledby="results-title">
+      <h1 id="results-title" class="results-title">Search results</h1>
+      <div id="results"></div>
+      <noscript><p>Search needs JavaScript.</p></noscript>
+    </section>
+
+  </main>
+
+  <footer class="about-footer">
+    <div class="about-footer-left">
+      <a href="../../index.html" aria-label="Cruze search home">
+        <img src="../../media/cruze_Logotype.png" alt="Cruze" class="footer-logo cruze-logo">
+      </a>
+    </div>
+    <nav aria-label="Cruze">
+      <ul class="footer-buttons">
+        <li><a href="about.html" class="btn">About</a></li>
+        <li><a href="how-search-works.html" class="btn">How Search Works</a></li>
+        <li><a href="help.html" class="btn">Help</a></li>
+        <li><a href="privacy.html" class="btn">Privacy</a></li>
+        <li><a href="advertising.html" class="btn">Advertising</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+  <script src="../../scripts/cruze.js"></script>
+</body>
+</html>
